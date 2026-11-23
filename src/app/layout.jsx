@@ -1,30 +1,10 @@
-import { Geist, Geist_Mono, Poppins, Inter } from "next/font/google";
+import { geistSans, geistMono, poppins, inter } from "../lib/fonts";
 import "./globals.css";
 import { DataProvider } from "../context/form.context"; // ✅ import your context
 import { Analytics } from '@vercel/analytics/next';
 import { Toaster } from 'react-hot-toast';
 
-// 🧠 Load fonts with CSS variables
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // adjust as needed
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
+// Fonts (with CSS variables) are defined in src/lib/fonts.js
 
 // 🏷️ Metadata
 export const metadata = {

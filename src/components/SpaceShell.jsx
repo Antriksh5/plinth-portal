@@ -1,15 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
-import { Orbitron } from "next/font/google";
+import { orbitron_400_600_700_800 as orbitron } from "../lib/fonts";
+export { orbitron };
 import { Satellite, Sparkles, UserCheck, Trophy, Users, Check } from "lucide-react";
 import { Particles } from "./ui/particles";
 import { Meteors } from "./ui/meteors";
 
-export const orbitron = Orbitron({
-  subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
-  display: "swap",
-});
 
 const STEPS = [
   { n: 1, title: "Register", icon: UserCheck },

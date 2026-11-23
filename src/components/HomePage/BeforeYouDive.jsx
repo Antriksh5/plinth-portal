@@ -9,13 +9,8 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import { Orbitron } from "next/font/google";
+import { orbitron_400_600_800_900 as orbitron } from "../../lib/fonts";
 
-const orbitron = Orbitron({
-  subsets: ["latin"],
-  weight: ["400", "600", "800", "900"],
-  display: "swap",
-});
 
 const contentData = [
   {

@@ -2,15 +2,10 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Orbitron } from "next/font/google";
+import { orbitron_400_600_800 as orbitron } from "../../lib/fonts";
 import { FileText, Users, ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-const orbitron = Orbitron({
-  subsets: ["latin"],
-  weight: ["400", "600", "800"],
-  display: "swap",
-});
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },

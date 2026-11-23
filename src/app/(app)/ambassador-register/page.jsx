@@ -5,13 +5,8 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { User, Mail, Phone, School, ArrowRight, Loader2 } from "lucide-react";
 import toast from "react-hot-toast";
-import { Orbitron } from "next/font/google";
+import { orbitron_400_600_800 as orbitron } from "../../../lib/fonts";
 
-const orbitron = Orbitron({
-  subsets: ["latin"],
-  weight: ["400", "600", "800"],
-  display: "swap",
-});
 
 export default function AmbassadorRegisterPage() {
   const router = useRouter();

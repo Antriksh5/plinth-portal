@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Orbitron } from "next/font/google";
+import { orbitron_400_600_800 as orbitron } from "../../../lib/fonts";
 import { 
   Award, 
   Ticket, 
@@ -16,11 +16,6 @@ import {
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-const orbitron = Orbitron({
-  subsets: ["latin"],
-  weight: ["400", "600", "800"],
-  display: "swap",
-});
 
 const containerVariants = {
   hidden: { opacity: 0 },

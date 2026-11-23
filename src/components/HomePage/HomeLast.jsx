@@ -2,12 +2,8 @@
 
 import { Users, FileText, Sparkles } from "lucide-react";
 import RegisterButton from "../RegisterButton";
-import { Orbitron } from "next/font/google";
+import { orbitron_500_700_900 as orbitron } from "../../lib/fonts";
 
-const orbitron = Orbitron({
-  subsets: ["latin"],
-  weight: ["500", "700", "900"],
-});
 
 const GROUP_DISCOUNT_CONTACTS = [
   { name: "Anant Bagla", phone: "6350156384" },

@@ -4,9 +4,8 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { Sparkles, Home, Copy } from "lucide-react";
 import toast from "react-hot-toast";
-import { Orbitron } from "next/font/google";
+import { orbitron_700_800 as orbitron } from "../../../lib/fonts";
 
-const orbitron = Orbitron({ subsets: ["latin"], weight: ["700", "800"], display: "swap" });
 
 export default function AmbassadorThankYouPage() {
   const router = useRouter();

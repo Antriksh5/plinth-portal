@@ -5,18 +5,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Meteors } from "../../components/ui/meteors";
 import { Particles } from "../../components/ui/particles";
 import RegisterButton from "../../components/RegisterButton";
-import { Orbitron } from "next/font/google";
+import { orbitron_400_600_800_900 as orbitron } from "../../lib/fonts";
 import { Phone, Users, FileText, Star, Clock, Home, Shield, Ticket } from "lucide-react";
 import BeforYouDive from "../../components/HomePage/BeforeYouDive";
 import HomeLast from "../../components/HomePage/HomeLast";
 import HeroAdditions from "../../components/HomePage/first";
 
 
-const orbitron = Orbitron({
-  subsets: ["latin"],
-  weight: ["400", "600", "800", "900"],
-  display: "swap",
-});
 
 // Enhanced animations
 const fadeUp = {
