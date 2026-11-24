@@ -6,14 +6,16 @@ import { orbitron_500_700_900 as orbitron } from "../../lib/fonts";
 
 
 const GROUP_DISCOUNT_CONTACTS = [
-  { name: "Anant Bagla", phone: "6350156384" },
-  { name: "Daksh Vashishtha", phone: "9358944736" },
-  { name: "Sumit Jalan", phone: "9935342414" },
+  { designation :"GSec." ,name: "Anant Bagla", phone: "6350156384" },
+  { designation :"PR Head" ,name: "Daksh Vashishtha", phone: "9358944736" },
+  { designation :"Fest Head" ,name: "Sumit Jalan", phone: "9935342414" },
+  { designation :"Fest Head" ,name: "Vedansh Goswami", phone: "9079302615" },
+  
 ];
 
 const REGISTRATION_HELP_CONTACTS = [
-  { name: "Daksh Vashishtha", phone: "9358944736" },
-  { name: "Diya Rathore", phone: "6377150154" },
+  {designation: "PR Head", name: "Daksh Vashishtha", phone: "9358944736" },
+  {designation: "PR Head", name: "Diya Rathore", phone: "6377150154" },
 ];
 
 export default function RegistrationInfo() {
@@ -90,6 +92,8 @@ export default function RegistrationInfo() {
               <ul className="space-y-3">
                 {GROUP_DISCOUNT_CONTACTS.map((c) => (
                   <li key={c.phone} className="flex items-center justify-between gap-3">
+                    <span className="text-gray-200 font-medium min-w-0">{c.designation}</span>
+
                     <span className="text-gray-200 font-medium min-w-0">{c.name}</span>
                     <a
                       href={`tel:+91${c.phone}`}
@@ -142,6 +146,7 @@ export default function RegistrationInfo() {
               <ul className="space-y-2">
                 {REGISTRATION_HELP_CONTACTS.map((c) => (
                   <li key={c.phone} className="flex items-center justify-between gap-3 text-sm">
+                    <span className="text-gray-300 min-w-0">{c.designation}</span>
                     <span className="text-gray-300 min-w-0">{c.name}</span>
                     <a
                       href={`tel:+91${c.phone}`}
