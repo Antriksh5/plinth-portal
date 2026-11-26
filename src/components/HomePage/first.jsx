@@ -99,7 +99,7 @@ export default function HeroAdditions() {
       >
         <button
           className="group relative px-6 py-3 rounded-full bg-white/5 backdrop-blur-md border border-white/20 text-white font-semibold transition-all hover:bg-white/10 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 overflow-hidden"
-          onClick={() => window.open("https://drive.google.com/file/d/1a0tON0obFMKoOfOF97hxK_9P94tCXBPj/view?usp=sharing", "_blank")}
+          onClick={() => window.open("https://drive.google.com/file/d/1fgoqpOlWRo3pr7rLK5ZSX2zd1o4WB1jH/view?usp=drive_link", "_blank")}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700" />
           <FileText className="w-5 h-5 group-hover:text-cyan-400 transition-colors" />
